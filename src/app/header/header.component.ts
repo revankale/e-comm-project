@@ -10,7 +10,8 @@ export class HeaderComponent implements OnInit {
 
 
   menuType: string = 'default';
-  sellerName: string = ''
+  sellerName: string = '';
+
   constructor(private route: Router) { }
 
   ngOnInit(): void {

@@ -15,7 +15,7 @@
     <ul *ngSwitchCase="'seller'">
       <li><a routerLink="seller-add-product">Add Product</a></li>
       <li><a routerLink="seller-home">List</a></li>
-      <li><a (click)="logOut()">Logout</a></li>
+      <li><a routerLink="" (click)="logOut()">Logout</a></li>
       <li><a href="">{{sellerName | titlecase}}</a></li>
     </ul>
   </div>
