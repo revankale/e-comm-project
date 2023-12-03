@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { ProductService } from '../services/product.service';
 import { product } from 'src/data-type';
 
@@ -11,17 +11,17 @@ import { product } from 'src/data-type';
 export class SellerUpdateProductComponent implements OnInit {
 
 
-  productData: undefined | product
+  productData: undefined | product;
 
-  constructor(private route: ActivatedRoute, private product: ProductService) { }
+  updateProductMessage: undefined | string;
+
+  constructor(private route: ActivatedRoute, private product: ProductService, private router: Router) { }
 
   ngOnInit(): void {
     this.onEdit();
   }
 
-  submit(data: any) {
 
-  }
 
   onEdit() {
     let productId = this.route.snapshot.paramMap.get('id');
@@ -30,6 +30,21 @@ export class SellerUpdateProductComponent implements OnInit {
       // console.warn("data", data)
       this.productData = data;
     })
+  }
 
+  submit(data: product) {
+    // console.warn(data)
+    if (this.productData) {
+      data.id = this.productData.id
+    }
+    this.product.updateProduct(data).subscribe((result) => {
+      if (result) {
+        this.updateProductMessage = "Product has updated"
+      }
+    })
+    setTimeout(() => {
+      this.updateProductMessage = undefined;
+      this.router.navigate(['/seller-home']);
+    }, 3000);
   }
 }

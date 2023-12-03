@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductService } from '../services/product.service';
 import { product } from 'src/data-type';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-seller-add-product',
@@ -11,7 +12,7 @@ export class SellerAddProductComponent implements OnInit {
 
   addProductMessege: string | undefined;
 
-  constructor(private product: ProductService) { }
+  constructor(private product: ProductService, private router: Router) { }
 
   ngOnInit(): void {
   }
@@ -23,7 +24,12 @@ export class SellerAddProductComponent implements OnInit {
       if (result) {
         this.addProductMessege = "Product is successfully added";
       }
-      setTimeout(() => (this.addProductMessege = undefined), 3000);
+      setTimeout(() => {
+        this.addProductMessege = undefined;
+        this.router.navigate(['/seller-home'])
+      }, 3000);
+
+
     })
   }
 
