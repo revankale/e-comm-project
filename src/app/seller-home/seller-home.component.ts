@@ -28,13 +28,13 @@ export class SellerHomeComponent implements OnInit {
 
   listProduct() {
     this.product.productList().subscribe((result) => {
-      console.warn(result)
+      // console.warn(result)
       this.productList = result
     })
   }
 
   deleteProduct(id: number) {
-    console.warn("test id", id);
+    // console.warn("test id", id);
     this.product.deleteProduct(id).subscribe((result: any) => {
       if (result) {
         this.productMessege = "Product is deleted";

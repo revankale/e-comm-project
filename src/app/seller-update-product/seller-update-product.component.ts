@@ -25,9 +25,9 @@ export class SellerUpdateProductComponent implements OnInit {
 
   onEdit() {
     let productId = this.route.snapshot.paramMap.get('id');
-    console.warn("id", productId)
+    // console.warn("id", productId)
     productId && this.product.editProduct(productId).subscribe((data) => {
-      console.warn("data", data)
+      // console.warn("data", data)
       this.productData = data;
     })
 

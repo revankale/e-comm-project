@@ -42,11 +42,11 @@ export class SellerService {
       .subscribe((result: any) => {
         console.warn(result)
         if (result && result.body && result.body.length) {
-          console.warn("user logged in")
+          // console.warn("user logged in")
           localStorage.setItem('seller', JSON.stringify(result.body))
           this.router.navigate(['seller-home'])
         } else {
-          console.warn("login failed")
+          // console.warn("login failed")
           this.isLoginError.emit(true);
         }
       })
