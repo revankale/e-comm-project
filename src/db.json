@@ -94,7 +94,7 @@
   "products": [
     {
       "name": "i phone",
-      "price": "113",
+      "price": "5,000",
       "color": "white",
       "categery": "mobile",
       "description": "nice",
@@ -118,6 +118,42 @@
       "description": "this is laptop",
       "image": "https://www.91-cdn.com/hub/wp-content/uploads/2022/07/Top-laptop-brands-in-India.jpg",
       "id": 4
+    },
+    {
+      "name": "nike shoes",
+      "price": "2,000",
+      "color": "black",
+      "categery": "shoes",
+      "description": "nice",
+      "image": "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/1eeaacc0-e07c-4024-a5f7-57f2fd23e8a2/air-max-270-g-golf-shoe-Z6vCfs.png",
+      "id": 5
+    },
+    {
+      "name": "jeans",
+      "price": "1,000",
+      "color": "blue",
+      "categery": "dress",
+      "description": "good",
+      "image": "https://www.filmibeat.com/wimg/desktop/2012/12/13548612746596.jpg",
+      "id": 6
+    },
+    {
+      "name": "toy",
+      "price": "1.000",
+      "color": "black",
+      "categery": "toy",
+      "description": "this is toy",
+      "image": "https://cdn.shopify.com/s/files/1/0011/8367/8476/products/Truck2_1400x.png?v=1662789388",
+      "id": 7
+    },
+    {
+      "name": "smart watch",
+      "price": "3,000",
+      "color": "blue",
+      "categery": "watch",
+      "description": "this is smart watch",
+      "image": "https://www.reliancedigital.in/medias/Noise-Colorfit-Pro-2-Smart-Watch-491900986-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w1MDc0NXxpbWFnZS9qcGVnfGltYWdlcy9oYzkvaDdjLzk1OTE4MjA3NDY3ODIuanBnfDA3MjZlMzkzOTExYzMyNzk5Y2YzOTk0MWFkMjc5YjE5OTlkMDE4NzYzYTg1YzQ2YmNjZjMxYzc5ZDJiYjBlNDg",
+      "id": 8
     }
   ]
 }
