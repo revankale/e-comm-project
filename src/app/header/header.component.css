@@ -53,3 +53,21 @@
   height: 39px;
   cursor: pointer;
 }
+
+.suggested-result {
+  position: absolute;
+  display: list-item !important;
+  z-index: 10;
+  background-color: #fff;
+  width: 300px;
+  top: 58px;
+  border: 1px solid #ddd;
+}
+.suggested-result li {
+  border: 1px solid #ddd;
+  padding: 5px;
+}
+.suggested-result li a {
+  color: blueviolet;
+  cursor: pointer;
+}
